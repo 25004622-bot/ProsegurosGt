@@ -144,16 +144,7 @@
     }
     .btn-outline:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.38); }
 
-    .btn-sinister {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: transparent; border: 1.5px solid rgba(255,255,255,0.22);
-      border-radius: 8px; padding: 7px 14px; cursor: pointer;
-      text-decoration: none;
-      transition: background 0.2s, border-color 0.2s;
-    }
-    .btn-sinister:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.38); }
-    .btn-sinister__report { font-size: 12.5px; font-weight: 500; color: #DC2626; text-transform: uppercase; letter-spacing: 0.5px; }
-    .btn-sinister__label  { font-size: 12.5px; font-weight: 500; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; }
+        /* .btn-sinister removed */
 
     /* ── Section labels ── */
     .section-label { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #94A3B8; margin-bottom: 16px; }
@@ -223,9 +214,9 @@
   <div class="topbar bg-navy-2/80 border-b border-white/[0.06]">
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-1.5 flex items-center justify-between text-[11px] text-white/40">
       <div class="flex items-center gap-5 overflow-x-auto no-scroll">
-        <a href="tel:42160933" class="flex items-center gap-1.5 hover:text-white/75 transition-colors whitespace-nowrap">
+        <a href="tel:24901725" class="flex items-center gap-1.5 hover:text-white/75 transition-colors whitespace-nowrap">
           <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          4216-0933 / 2251-8272
+          2490-1725 / 5216-7732
         </a>
         <a href="mailto:juanpablo@prosegurosguatemala.com" class="hidden sm:flex items-center gap-1.5 hover:text-white/75 transition-colors whitespace-nowrap">
           <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
@@ -279,38 +270,35 @@
           <div class="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-3 py-2.5 mb-2">
             <svg class="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
             <input id="searchInput" type="search" placeholder="¿Qué quieres proteger hoy?" class="bg-transparent border-none outline-none text-[13px] text-navy placeholder-gray-400 w-full" aria-label="Buscar en ProSeguros GT"/>
+            <button type="button" id="searchSubmitBtn" class="flex-shrink-0 w-6 h-6 rounded-lg bg-navy flex items-center justify-center hover:bg-navy-3 transition-colors" aria-label="Buscar">
+              <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
           </div>
           <p class="text-[10px] text-gray-400 uppercase tracking-[1.2px] px-2 py-1.5">Accesos rápidos</p>
           <nav aria-label="Accesos rápidos">
-            <a href="#" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
+            <a href="proximamente.html" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
               Realizar pago <svg class="quick-link__arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
+            <a href="proximamente.html" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
               Red médica <svg class="quick-link__arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
+            <a href="proximamente.html" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Descargar póliza <svg class="quick-link__arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
+            <a href="proximamente.html" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
               Ver certificado <svg class="quick-link__arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
+            <a href="proximamente.html" class="quick-link flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-[13px] text-slate-600 hover:bg-gray-50 hover:text-navy transition-all duration-150">
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
               Renovar seguro <svg class="quick-link__arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </nav>
         </div>
       </div>
-
-      <!-- Reportar siniestro -->
-      <a href="#contacto" class="btn-sinister">
-        <span class="btn-sinister__report">Reportar</span>
-        <span class="btn-sinister__label">&nbsp;Siniestro</span>
-      </a>
 
       <!-- Hamburger (mobile) -->
       <button id="hamburgerBtn" class="hamburger lg:hidden border border-white/20 rounded-lg p-2 text-white hover:bg-white/[0.06] transition-all" aria-label="Abrir menú" aria-expanded="false">
@@ -421,7 +409,7 @@
           </div>
           <div class="cot-form-2 grid grid-cols-2 gap-3">
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="m-nombre">Nombre completo</label><input id="m-nombre" type="text" placeholder="Juan García" class="ps-input"/></div>
-            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="m-tel">Teléfono</label><input id="m-tel" type="tel" placeholder="4216-0933" class="ps-input"/></div>
+            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="m-tel">Teléfono</label><input id="m-tel" type="tel" placeholder="2490-1725" class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="m-num">N.º de personas</label><input id="m-num" type="number" placeholder="Ej. 25" min="1" class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="m-dental">Cobertura dental</label><select id="m-dental" class="ps-input"><option value="">Seleccionar...</option><option>Sí, incluir dental</option><option>No por ahora</option></select></div>
           </div>
@@ -448,7 +436,7 @@
           <div class="cot-form-2 grid grid-cols-2 gap-3">
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="v-nombre">Nombre completo</label><input id="v-nombre" type="text" placeholder="Juan García" class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="v-edad">Edad</label><input id="v-edad" type="number" placeholder="35" min="18" max="75" class="ps-input"/></div>
-            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="v-tel">Teléfono</label><input id="v-tel" type="tel" placeholder="4216-0933" class="ps-input"/></div>
+            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="v-tel">Teléfono</label><input id="v-tel" type="tel" placeholder="2490-1725" class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="v-suma">Suma asegurada</label><select id="v-suma" class="ps-input"><option value="">Seleccionar...</option><option>Q 100,000 – Q 250,000</option><option>Q 250,000 – Q 500,000</option><option>Q 500,000 – Q 1,000,000</option><option>Más de Q 1,000,000</option></select></div>
           </div>
           <button type="button" class="btn-primary w-full mt-5" data-cot="Seguro de vida">
@@ -467,7 +455,7 @@
           <p class="text-[12px] text-gray-400 mb-5">Cobertura amplia, planes flexibles y asistencia 24/7 en carretera</p>
           <div class="cot-form-3 grid grid-cols-3 gap-3">
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="a-nombre">Nombre completo</label><input id="a-nombre" type="text" placeholder="Juan García" class="ps-input"/></div>
-            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="a-tel">Teléfono</label><input id="a-tel" type="tel" placeholder="4216-0933" class="ps-input"/></div>
+            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="a-tel">Teléfono</label><input id="a-tel" type="tel" placeholder="2490-1725" class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="a-anio">Año del vehículo</label><input id="a-anio" type="number" placeholder="2022" class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="a-marca">Marca</label><input id="a-marca" type="text" placeholder="Toyota, Hyundai..." class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="a-modelo">Modelo</label><input id="a-modelo" type="text" placeholder="Hilux, Tucson..." class="ps-input"/></div>
@@ -494,7 +482,7 @@
           </div>
           <div class="cot-form-2 grid grid-cols-2 gap-3">
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="i-empresa">Nombre / Empresa</label><input id="i-empresa" type="text" placeholder="Empresa S.A." class="ps-input"/></div>
-            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="i-tel">Teléfono</label><input id="i-tel" type="tel" placeholder="4216-0933" class="ps-input"/></div>
+            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="i-tel">Teléfono</label><input id="i-tel" type="tel" placeholder="2490-1725" class="ps-input"/></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="i-valor">Valor del inmueble</label><select id="i-valor" class="ps-input"><option value="">Seleccionar rango...</option><option>Menos de Q 500,000</option><option>Q 500,000 – Q 2,000,000</option><option>Q 2,000,000 – Q 10,000,000</option><option>Más de Q 10,000,000</option></select></div>
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="i-zona">Zona / Municipio</label><input id="i-zona" type="text" placeholder="Zona 9, Guatemala" class="ps-input"/></div>
           </div>
@@ -520,7 +508,7 @@
           </div>
           <div class="cot-form-2 grid grid-cols-2 gap-3">
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="f-empresa">Nombre / Empresa</label><input id="f-empresa" type="text" placeholder="Empresa S.A." class="ps-input"/></div>
-            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="f-tel">Teléfono</label><input id="f-tel" type="tel" placeholder="4216-0933" class="ps-input"/></div>
+            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="f-tel">Teléfono</label><input id="f-tel" type="tel" placeholder="2490-1725" class="ps-input"/></div>
             <div class="col-span-2 flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="f-desc">Descripción breve</label><input id="f-desc" type="text" placeholder="Ej. Cumplimiento de contrato con MINFIN por Q 500,000" class="ps-input"/></div>
           </div>
           <button type="button" class="btn-primary w-full mt-5" data-cot="Fianza">
@@ -539,6 +527,460 @@
   </div><!-- /Hero content -->
 </section>
 <!-- /HERO -->
+
+
+<!-- ═══════════════════════════════════════════════════
+     NOSOTROS — Misión, Visión y Valores
+════════════════════════════════════════════════════ -->
+<section id="nosotros" class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <!-- Section header -->
+    <header class="text-center mb-16">
+      <span class="section-label">Quiénes somos</span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-navy tracking-tight leading-tight mb-4">
+        Nuestra empresa
+      </h2>
+      <p class="text-gray-500 text-[15px] max-w-xl mx-auto leading-relaxed">
+        Con experiencia, compromiso e innovación, trabajamos cada día para ser el aliado más confiable de los guatemaltecos.
+      </p>
+    </header>
+
+    <!-- Tarjetas Misión · Visión · Valores -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+      <!-- Misión -->
+      <article class="bg-white rounded-2xl shadow-sm border border-gray-100 border-t-4 border-t-navy p-8 flex flex-col gap-5 hover:-translate-y-1 hover:shadow-lg hover:shadow-navy/8 transition-all duration-300">
+        <div class="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+          <!-- Ícono: diana / objetivo -->
+          <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="6"/>
+            <circle cx="12" cy="12" r="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-bold text-navy mb-3 tracking-tight">Misión</h3>
+          <p class="text-gray-500 text-[14.5px] leading-relaxed">
+            Asegurar al <strong class="text-navy font-semibold">80% de los guatemaltecos</strong> para el año <strong class="text-navy font-semibold">2035</strong>, brindando acceso a coberturas de calidad para cada familia y empresa del país.
+          </p>
+        </div>
+        <div class="mt-auto pt-4 border-t border-gray-50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-navy/30 flex-shrink-0"></span>
+          <span class="text-[12px] text-gray-400 uppercase tracking-wide font-medium">Nuestro propósito</span>
+        </div>
+      </article>
+
+      <!-- Visión -->
+      <article class="bg-white rounded-2xl shadow-sm border border-gray-100 border-t-4 border-t-navy p-8 flex flex-col gap-5 hover:-translate-y-1 hover:shadow-lg hover:shadow-navy/8 transition-all duration-300">
+        <div class="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+          <!-- Ícono: ojo / horizonte -->
+          <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-bold text-navy mb-3 tracking-tight">Visión</h3>
+          <p class="text-gray-500 text-[14.5px] leading-relaxed">
+            <strong class="text-navy font-semibold">Mejorar la calidad de vida</strong> de nuestra sociedad, siendo el corredor de seguros más confiable e innovador de Guatemala.
+          </p>
+        </div>
+        <div class="mt-auto pt-4 border-t border-gray-50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-navy/30 flex-shrink-0"></span>
+          <span class="text-[12px] text-gray-400 uppercase tracking-wide font-medium">Hacia dónde vamos</span>
+        </div>
+      </article>
+
+      <!-- Valores -->
+      <article class="bg-white rounded-2xl shadow-sm border border-gray-100 border-t-4 border-t-navy p-8 flex flex-col gap-5 hover:-translate-y-1 hover:shadow-lg hover:shadow-navy/8 transition-all duration-300">
+        <div class="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+          <!-- Ícono: escudo -->
+          <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-[18px] font-bold text-navy mb-3 tracking-tight">Valores</h3>
+          <ul class="flex flex-col gap-3">
+            <li class="flex items-center gap-3 text-gray-500 text-[14.5px]">
+              <span class="w-7 h-7 rounded-xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-navy" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <span><strong class="text-navy font-semibold">Protección</strong> — respaldamos lo que más importa</span>
+            </li>
+            <li class="flex items-center gap-3 text-gray-500 text-[14.5px]">
+              <span class="w-7 h-7 rounded-xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-navy" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <span><strong class="text-navy font-semibold">Seguridad</strong> — confianza en cada póliza</span>
+            </li>
+            <li class="flex items-center gap-3 text-gray-500 text-[14.5px]">
+              <span class="w-7 h-7 rounded-xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-navy" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </span>
+              <span><strong class="text-navy font-semibold">Salud</strong> — bienestar para cada guatemalteco</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto pt-4 border-t border-gray-50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-navy/30 flex-shrink-0"></span>
+          <span class="text-[12px] text-gray-400 uppercase tracking-wide font-medium">En qué creemos</span>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<!-- /NOSOTROS -->
+
+<!-- ═══════════════════════════════════════════════════
+     SEGUROS — Catálogo de productos
+════════════════════════════════════════════════════ -->
+<section id="seguros" class="bg-gray-50/60 py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <!-- Section header -->
+    <header class="text-center mb-16">
+      <span class="section-label">Nuestros productos</span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-navy tracking-tight leading-tight mb-4">
+        ¿Qué quieres proteger?
+      </h2>
+      <p class="text-gray-500 text-[15px] max-w-xl mx-auto leading-relaxed">
+        Tenemos una solución para cada etapa de tu vida. Explora nuestro catálogo y encuentra el plan ideal para ti.
+      </p>
+    </header>
+
+    <!-- Grid de tarjetas de seguros -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <!-- ── Tarjeta 1: Seguros Médicos ── -->
+      <article class="bg-white rounded-2xl shadow-md border border-gray-100 p-7 flex flex-col gap-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/8 transition-all duration-300" data-search-keywords="medico medicos medica salud corporativo familiar dental planilla colectivo">
+
+        <!-- Ícono + título -->
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-[17px] font-bold text-navy tracking-tight leading-snug">Seguros Médicos</h3>
+            <p class="text-[12px] text-gray-400 mt-0.5">Masivos y personales</p>
+          </div>
+        </div>
+
+        <!-- Divisor -->
+        <div class="h-px bg-gray-100"></div>
+
+        <!-- Planes -->
+        <ul class="flex flex-col gap-4">
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Planes Corporativos</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Cobertura médica completa para empresas. Chequeos preventivos, hospitalización y descuentos especiales por volumen de empleados.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Planes Familiares</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Protección para todos los miembros. Incluye pediatría, emergencias y cobertura dental opcional con amplia red de especialistas.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Seguro Médico Colectivo</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Especializado en planillas con las tarifas más competitivas del mercado.</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- CTA -->
+        <div class="mt-auto pt-4 border-t border-gray-50">
+          <a href="#cotizador" class="text-[12.5px] font-semibold text-navy flex items-center gap-1.5 hover:gap-3 transition-all duration-200">
+            Solicitar cotización
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── Tarjeta 2: Seguros de Vida ── -->
+      <article class="bg-white rounded-2xl shadow-md border border-gray-100 p-7 flex flex-col gap-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/8 transition-all duration-300" data-search-keywords="vida familiar inversion fope estudios ahorro legado">
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-[17px] font-bold text-navy tracking-tight leading-snug">Seguros de Vida</h3>
+            <p class="text-[12px] text-gray-400 mt-0.5">Para cada etapa familiar</p>
+          </div>
+        </div>
+
+        <div class="h-px bg-gray-100"></div>
+
+        <ul class="flex flex-col gap-4">
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Vida Familiar</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Legado familiar que brinda tranquilidad y seguridad a largo plazo.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Vida con Inversión</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Porcentaje de interés por renovación o a plazo fijo. Tu póliza también crece.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Vida FOPE — Para Estudios</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Fondo específico para garantizar el legado educativo de tus hijos.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Vida con Ahorro</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Retorno del capital al expirar la póliza. Protección que también ahorra.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="mt-auto pt-4 border-t border-gray-50">
+          <a href="#cotizador" class="text-[12.5px] font-semibold text-navy flex items-center gap-1.5 hover:gap-3 transition-all duration-200">
+            Solicitar cotización
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── Tarjeta 3: Seguros de Vehículos ── -->
+      <article class="bg-white rounded-2xl shadow-md border border-gray-100 p-7 flex flex-col gap-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/8 transition-all duration-300" data-search-keywords="vehiculo vehiculos auto autos moto motocicleta flota transporte carretera">
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="1" y="3" width="15" height="13" rx="2"/>
+              <path d="M16 8h4l3 5v3h-7V8z"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-[17px] font-bold text-navy tracking-tight leading-snug">Seguros de Vehículos</h3>
+            <p class="text-[12px] text-gray-400 mt-0.5">Autos, motos, flotas y transporte</p>
+          </div>
+        </div>
+
+        <div class="h-px bg-gray-100"></div>
+
+        <ul class="flex flex-col gap-4">
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Cobertura amplia</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Desde responsabilidad civil hasta protección integral. Para autos, motocicletas, flotas, transporte urbano y extraurbano.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Asistencia 24/7 en carretera</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Grúa, cambio de llanta y orientación ante accidentes. Disponible los 7 días de la semana.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Planes flexibles y descuentos</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Planes adaptados a tu presupuesto. Descuentos exclusivos por buen historial de manejo y lealtad.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="mt-auto pt-4 border-t border-gray-50">
+          <a href="#cotizador" class="text-[12.5px] font-semibold text-navy flex items-center gap-1.5 hover:gap-3 transition-all duration-200">
+            Solicitar cotización
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── Tarjeta 4: Seguro de Viajero ── -->
+      <article class="bg-white rounded-2xl shadow-md border border-gray-100 p-7 flex flex-col gap-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/8 transition-all duration-300" data-search-keywords="viajero viaje viajes internacional extranjero emergencia medicamento">
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-navy/5 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-[17px] font-bold text-navy tracking-tight leading-snug">Seguro de Viajero</h3>
+            <p class="text-[12px] text-gray-400 mt-0.5">Protección internacional desde Guatemala</p>
+          </div>
+        </div>
+
+        <div class="h-px bg-gray-100"></div>
+
+        <ul class="flex flex-col gap-4">
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Atención de emergencias</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Hospitalización en la ciudad destino y cobertura de medicamentos incluida.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Pago directo del 20%</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Pago directo por asegurado al momento del siniestro, sin trámites complicados.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="w-5 h-5 rounded-full bg-navy/8 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-2.5 h-2.5 text-navy" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13.5px] font-semibold text-navy">Cobertura puerta a puerta</p>
+              <p class="text-[12.5px] text-gray-500 leading-relaxed mt-0.5">Desde la salida de Guatemala hasta el regreso al país. Asistencia telefónica y por app 24/7.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="mt-auto pt-4 border-t border-gray-50">
+          <a href="#cotizador" class="text-[12.5px] font-semibold text-navy flex items-center gap-1.5 hover:gap-3 transition-all duration-200">
+            Solicitar cotización
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── Tarjeta 5: Productos para Cooperativas ── -->
+      <!-- Tarjeta destacada: ocupa 2 columnas en desktop -->
+      <article class="bg-navy rounded-2xl shadow-md p-7 flex flex-col gap-6 md:col-span-2 lg:col-span-2 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/30 transition-all duration-300" data-search-keywords="cooperativa cooperativas desempleo saldo deudor colectivo masivo">
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+              <path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-[17px] font-bold text-white tracking-tight leading-snug">Productos para Cooperativas</h3>
+            <p class="text-[12px] text-white/50 mt-0.5">Soluciones masivas que generan ingresos pasivos</p>
+          </div>
+        </div>
+
+        <div class="h-px bg-white/10"></div>
+
+        <!-- Grid interno 2 columnas -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <ul class="flex flex-col gap-3">
+            <li class="flex gap-3">
+              <span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <div>
+                <p class="text-[13.5px] font-semibold text-white">Vida sobre saldo deudor</p>
+                <p class="text-[12.5px] text-white/55 leading-relaxed mt-0.5">Protección para los asociados con crédito activo.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <div>
+                <p class="text-[13.5px] font-semibold text-white">Seguro de desempleo</p>
+                <p class="text-[12.5px] text-white/55 leading-relaxed mt-0.5">Cobertura ante pérdida involuntaria de empleo.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <div>
+                <p class="text-[13.5px] font-semibold text-white">Colectivo de vida y gastos médicos</p>
+                <p class="text-[12.5px] text-white/55 leading-relaxed mt-0.5">Plan integral para todos los socios de la cooperativa.</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-3">
+            <li class="flex gap-3">
+              <span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <div>
+                <p class="text-[13.5px] font-semibold text-white">Accidentes personales y vida</p>
+                <p class="text-[12.5px] text-white/55 leading-relaxed mt-0.5">Cobertura colectiva de accidentes, asistencias médicas y vida.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <div>
+                <p class="text-[13.5px] font-semibold text-white">Comercialización masiva</p>
+                <p class="text-[12.5px] text-white/55 leading-relaxed mt-0.5">A través de servicio al cliente y cajas. <strong class="text-white font-semibold">Ingresos pasivos</strong> para la cooperativa.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-white/10">
+          <a href="#contacto" class="text-[12.5px] font-semibold text-white/80 hover:text-white flex items-center gap-1.5 hover:gap-3 transition-all duration-200">
+            Hablar con un asesor
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /grid -->
+
+  </div>
+</section>
+<!-- /SEGUROS -->
+
+
 
 
 <!-- ═══════════════════════════════════════════════════
@@ -582,120 +1024,71 @@
 
 
 <!-- ═══════════════════════════════════════════════════
-     CLIENTES — Empresas de confianza + Testimoniales
+     CLIENTES — Confianza y alcance
 ════════════════════════════════════════════════════ -->
-<section id="clientes" class="bg-gray-50/60 py-24">
+<section id="clientes" class="bg-navy py-20">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
-    <!-- Section header -->
-    <header class="text-center mb-16">
-      <span class="section-label">Nos han elegido</span>
-      <h2 class="text-4xl lg:text-5xl font-bold text-navy tracking-tight leading-tight mb-4">
-        Clientes que confían<br class="hidden sm:block"/> en nosotros
-      </h2>
-      <p class="text-gray-500 text-[15px] max-w-xl mx-auto leading-relaxed">
-        Desde embajadas internacionales hasta cooperativas y grupos empresariales guatemaltecos.
-      </p>
-    </header>
+    <!-- Contenedor principal — dos columnas en desktop, apilado en móvil -->
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
 
-    <!-- Client bento grid -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-20">
+      <!-- Columna izquierda: stat principal -->
+      <div class="flex-1 text-center lg:text-left">
 
-      <article class="card lg:col-span-2 p-8 flex flex-col justify-between">
-        <div class="card__icon bg-blue-50 mb-6">
-          <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+        <!-- Número destacado -->
+        <div class="flex items-end justify-center lg:justify-start gap-3 mb-4">
+          <span class="text-5xl lg:text-6xl font-bold text-white tracking-tight">+2,500</span>
+          <span class="text-[15px] font-medium text-white/50 mb-2 leading-tight">guatemaltecos<br/>asegurados</span>
         </div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">Embajada Británica</p><p class="text-[11.5px] text-gray-400">en la Ciudad de Guatemala</p></div>
-      </article>
 
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-red-50 mb-6"><svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/></svg></div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">Embajada del Japón</p><p class="text-[11.5px] text-gray-400">en Guatemala</p></div>
-      </article>
+        <!-- Barra decorativa -->
+        <div class="w-16 h-1 rounded-full bg-white/25 mx-auto lg:mx-0 mb-5"></div>
 
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-orange-50 mb-6"><span class="text-[17px] font-bold text-orange-500">Q</span></div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">Grupo Q</p><p class="text-[11.5px] text-gray-400">Sirviendo con pasión</p></div>
-      </article>
+        <!-- Subtítulo -->
+        <p class="text-white/55 text-[15px] leading-relaxed max-w-sm mx-auto lg:mx-0">
+          Desde embajadas internacionales hasta cooperativas y grupos empresariales guatemaltecos.
+        </p>
+      </div>
 
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-slate-50 mb-6">
-          <svg class="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v9a2 2 0 01-2 2h-2M9 17a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg>
+      <!-- Divisor vertical (solo desktop) -->
+      <div class="hidden lg:block w-px h-28 bg-white/10" aria-hidden="true"></div>
+
+      <!-- Columna derecha: tres métricas de apoyo -->
+      <div class="flex-1 grid grid-cols-3 gap-6 text-center">
+
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-11 h-11 rounded-2xl bg-white/[0.08] flex items-center justify-center mb-1">
+            <svg class="w-5 h-5 text-white/60" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <span class="text-2xl font-bold text-white">9<span class="text-white/40">+</span></span>
+          <span class="text-[11px] text-white/40 uppercase tracking-wide leading-tight">Aseguradoras<br/>aliadas</span>
         </div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">AutoMotors</p><p class="text-[11.5px] text-gray-400">Drive Your Dreams</p></div>
-      </article>
 
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-emerald-50 mb-6">
-          <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-11 h-11 rounded-2xl bg-white/[0.08] flex items-center justify-center mb-1">
+            <svg class="w-5 h-5 text-white/60" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <span class="text-2xl font-bold text-white">6</span>
+          <span class="text-[11px] text-white/40 uppercase tracking-wide leading-tight">Afianzadoras<br/>con las que trabajamos</span>
         </div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">Cooperativa Nuevo Mundo</p><p class="text-[11.5px] text-gray-400">Servicios financieros</p></div>
-      </article>
 
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-teal-50 mb-6"><span class="text-[13px] font-bold text-teal-600">CO</span></div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">COMIS Cooperativa</p><p class="text-[11.5px] text-gray-400">Guatemala</p></div>
-      </article>
-
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-stone-50 mb-6">
-          <svg class="w-5 h-5 text-stone-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-11 h-11 rounded-2xl bg-white/[0.08] flex items-center justify-center mb-1">
+            <svg class="w-5 h-5 text-white/60" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <span class="text-2xl font-bold text-white">24<span class="text-white/40">/7</span></span>
+          <span class="text-[11px] text-white/40 uppercase tracking-wide leading-tight">Asistencia<br/>disponible</span>
         </div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">Santa Inés del Parque</p><p class="text-[11.5px] text-gray-400">Sector inmobiliario</p></div>
-      </article>
 
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-zinc-900 mb-6"><span class="text-[11px] font-bold text-white tracking-widest">R10</span></div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">Reserva Diez</p><p class="text-[11.5px] text-gray-400">Desarrollo de proyectos</p></div>
-      </article>
-
-      <article class="card p-7 flex flex-col justify-between">
-        <div class="card__icon bg-sky-50 mb-6"><span class="text-[14px] font-bold text-sky-700">JCN</span></div>
-        <div><p class="text-[13px] font-semibold text-navy mb-1">JCN</p><p class="text-[11.5px] text-gray-400">Sector empresarial</p></div>
-      </article>
-
-    </div>
-
-    <!-- Testimonials -->
-    <header class="text-center mb-12">
-      <span class="section-label">Lo que dicen de nosotros</span>
-      <h3 class="text-3xl lg:text-4xl font-bold text-navy tracking-tight">Experiencias reales</h3>
-    </header>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-
-      <article class="card p-7">
-        <div class="flex gap-1 mb-5" aria-label="5 estrellas"><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></div>
-        <blockquote class="text-[14px] text-slate-600 leading-relaxed mb-6">
-          "ProSeguros nos ayudó a diseñar un plan de seguro médico colectivo a la medida de nuestra planilla. El proceso fue rápido, transparente y sin complicaciones. Excelente servicio."
-        </blockquote>
-        <footer class="flex items-center gap-3 pt-5 border-t border-gray-50">
-          <div class="w-9 h-9 rounded-full bg-navy flex items-center justify-center text-white text-[12px] font-bold flex-shrink-0" aria-hidden="true">MA</div>
-          <div><p class="text-[13px] font-semibold text-navy">María Andrade</p><p class="text-[11.5px] text-gray-400">Gerente de RRHH · Cooperativa Nuevo Mundo</p></div>
-        </footer>
-      </article>
-
-      <article class="card card--dark p-7">
-        <div class="flex gap-1 mb-5" aria-label="5 estrellas"><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></div>
-        <blockquote class="text-[14px] text-white/70 leading-relaxed mb-6">
-          "Como flota de vehículos comerciales, necesitábamos un aliado que nos diera atención 24/7 y tarifas competitivas. ProSeguros superó todas nuestras expectativas. Muy profesionales."
-        </blockquote>
-        <footer class="flex items-center gap-3 pt-5 border-t border-white/10">
-          <div class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white text-[12px] font-bold flex-shrink-0" aria-hidden="true">RC</div>
-          <div><p class="text-[13px] font-semibold text-white">Roberto Castillo</p><p class="text-[11.5px] text-white/45">Director de Operaciones · AutoMotors</p></div>
-        </footer>
-      </article>
-
-      <article class="card p-7">
-        <div class="flex gap-1 mb-5" aria-label="5 estrellas"><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="star-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></div>
-        <blockquote class="text-[14px] text-slate-600 leading-relaxed mb-6">
-          "Llevamos más de tres años trabajando con ProSeguros para nuestra cobertura de fianzas ante el gobierno. Su asesoría técnica es impecable y la respuesta es siempre inmediata."
-        </blockquote>
-        <footer class="flex items-center gap-3 pt-5 border-t border-gray-50">
-          <div class="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center text-navy text-[12px] font-bold flex-shrink-0" aria-hidden="true">LP</div>
-          <div><p class="text-[13px] font-semibold text-navy">Lucía Pérez</p><p class="text-[11.5px] text-gray-400">Gerente Administrativo · Grupo Q</p></div>
-        </footer>
-      </article>
+      </div>
 
     </div>
 
@@ -815,7 +1208,7 @@
         <form id="contactForm" novalidate>
           <div class="grid grid-cols-2 gap-4 mb-4">
             <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="c-nombre">Nombre</label><input id="c-nombre" type="text" placeholder="Juan García" class="ps-input" required/></div>
-            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="c-tel">Teléfono</label><input id="c-tel" type="tel" placeholder="4216-0933" class="ps-input" required/></div>
+            <div class="flex flex-col gap-1.5"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="c-tel">Teléfono</label><input id="c-tel" type="tel" placeholder="2490-1725" class="ps-input" required/></div>
           </div>
           <div class="flex flex-col gap-1.5 mb-4"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="c-email">Correo electrónico</label><input id="c-email" type="email" placeholder="tucorreo@empresa.com" class="ps-input" required/></div>
           <div class="flex flex-col gap-1.5 mb-4"><label class="text-[11.5px] font-semibold text-gray-500 uppercase tracking-wide" for="c-tipo">¿Qué necesitas proteger?</label>
@@ -850,8 +1243,8 @@
           <div class="card__icon bg-navy/5 mb-5"><svg class="w-5 h-5 text-navy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
           <p class="text-[13px] font-bold text-navy mb-3">Llámanos</p>
           <div class="flex flex-col gap-2">
-            <a href="tel:42160933" class="flex items-center gap-2.5 text-[13px] text-gray-600 hover:text-navy transition-colors group"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0"></span>4216-0933<span class="text-[11px] text-gray-400 ml-auto group-hover:text-navy/50 transition-colors">Móvil</span></a>
-            <a href="tel:22518272" class="flex items-center gap-2.5 text-[13px] text-gray-600 hover:text-navy transition-colors group"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0"></span>2251-8272<span class="text-[11px] text-gray-400 ml-auto group-hover:text-navy/50 transition-colors">Oficina</span></a>
+            <a href="tel:24901725" class="flex items-center gap-2.5 text-[13px] text-gray-600 hover:text-navy transition-colors group"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0"></span>2490-1725<span class="text-[11px] text-gray-400 ml-auto group-hover:text-navy/50 transition-colors">Móvil</span></a>
+            <a href="tel:52167732" class="flex items-center gap-2.5 text-[13px] text-gray-600 hover:text-navy transition-colors group"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0"></span>5216-7732<span class="text-[11px] text-gray-400 ml-auto group-hover:text-navy/50 transition-colors">Oficina</span></a>
           </div>
         </article>
 
@@ -864,7 +1257,7 @@
           </div>
         </article>
 
-        <a href="https://wa.me/50242160933" target="_blank" rel="noopener" class="flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold text-[13.5px] px-6 py-4 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-emerald-500/25">
+        <a href="https://wa.me/50252167732" target="_blank" rel="noopener" class="flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold text-[13.5px] px-6 py-4 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-emerald-500/25">
           <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Chatear por WhatsApp
         </a>
@@ -891,7 +1284,7 @@
         </a>
         <p class="text-[13px] text-white/45 leading-relaxed mb-5">Tu aliado de confianza en protección, seguridad y salud. Corredor de seguros autorizado en Guatemala.</p>
         <div class="flex gap-3">
-          <a href="https://wa.me/50242160933" target="_blank" rel="noopener" class="w-8 h-8 rounded-xl bg-white/[0.07] hover:bg-white/[0.14] border border-white/[0.09] flex items-center justify-center transition-all duration-200" aria-label="WhatsApp">
+          <a href="https://wa.me/50252167732" target="_blank" rel="noopener" class="w-8 h-8 rounded-xl bg-white/[0.07] hover:bg-white/[0.14] border border-white/[0.09] flex items-center justify-center transition-all duration-200" aria-label="WhatsApp">
             <svg class="w-4 h-4 fill-white/60" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           </a>
           <a href="mailto:juanpablo@prosegurosguatemala.com" class="w-8 h-8 rounded-xl bg-white/[0.07] hover:bg-white/[0.14] border border-white/[0.09] flex items-center justify-center transition-all duration-200" aria-label="Email">
@@ -931,7 +1324,7 @@
             <svg class="w-4 h-4 text-white/25 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <span class="text-[13px] text-white/50 leading-relaxed">13 Calle 05-31, Zona 9<br/>Edificio Ascend, Guatemala</span>
           </li>
-          <li><a href="tel:42160933" class="text-[13px] text-white/50 hover:text-white/80 transition-colors">4216-0933 / 2251-8272</a></li>
+          <li><a href="tel:24901725" class="text-[13px] text-white/50 hover:text-white/80 transition-colors">2490-1725 / 5216-7732</a></li>
           <li><a href="mailto:juanpablo@prosegurosguatemala.com" class="text-[12px] text-white/40 hover:text-white/80 transition-colors break-all">juanpablo@prosegurosguatemala.com</a></li>
           <li><a href="mailto:cuentas@prosegurosGuatemala.com" class="text-[12px] text-white/40 hover:text-white/80 transition-colors break-all">cuentas@prosegurosGuatemala.com</a></li>
         </ul>
@@ -959,7 +1352,7 @@
 <!-- ═══════════════════════════════════════════════════
      WHATSAPP — Botón flotante
 ════════════════════════════════════════════════════ -->
-<a href="https://wa.me/50242160933" target="_blank" rel="noopener"
+<a href="https://wa.me/50252167732" target="_blank" rel="noopener"
    id="waFloat"
    class="wa-float fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold text-[13px] rounded-full px-5 py-3.5 shadow-2xl shadow-emerald-500/40 transition-all duration-300 hover:scale-105 hover:shadow-emerald-500/60"
    aria-label="Contactar por WhatsApp">
@@ -1157,7 +1550,7 @@ if (cotizadorEl) {
       } catch (err) {
         console.error('[ProSeguros] Error Firestore:', err);
         setBtnLoading(btn, false, originalHTML);
-        showFeedback(panelActivo, false, 'Error al enviar. Intenta de nuevo o llámanos al 4216-0933.');
+        showFeedback(panelActivo, false, 'Error al enviar. Intenta de nuevo o llámanos al 2490-1725.');
       }
       return; // Procesado — salir
     }
@@ -1201,7 +1594,7 @@ if (contactForm) {
     } catch (err) {
       console.error('[ProSeguros] Error Firestore contacto:', err);
       setBtnLoading(submitBtn, false, originalHTML);
-      showFeedback(contactForm, false, 'No pudimos enviar tu mensaje. Llámanos al 4216-0933.');
+      showFeedback(contactForm, false, 'No pudimos enviar tu mensaje. Llámanos al 2490-1725.');
     }
   });
 }
@@ -1233,6 +1626,125 @@ if (faqList) {
   });
 }
 
+
+// ── 4.6 Buscador — filtro de tarjetas de seguros ─────────────────────────
+// Cuando el usuario escribe y presiona Enter (o el botón de búsqueda),
+// la página hace scroll a #seguros y filtra las tarjetas visualmente.
+
+/**
+ * Normaliza texto eliminando tildes y pasando a minúsculas
+ * para que "médico" y "medico" sean equivalentes.
+ */
+function normalizeText(str) {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
+/**
+ * Filtra las tarjetas de seguros según la query.
+ * Busca en el data-search-keywords y en el texto visible de la tarjeta.
+ * Si query está vacío, muestra todas.
+ */
+function filterSegurosCards(query) {
+  const segurosSection = document.getElementById('seguros');
+  if (!segurosSection) return;
+
+  const cards    = segurosSection.querySelectorAll('article[data-search-keywords]');
+  const q        = normalizeText(query.trim());
+  let   anyMatch = false;
+
+  cards.forEach((card) => {
+    if (!q) {
+      // Sin query: mostrar todas y quitar resaltado
+      card.removeAttribute('hidden');
+      card.classList.remove('ring-2', 'ring-navy', 'ring-offset-2');
+      anyMatch = true;
+      return;
+    }
+
+    const keywords  = normalizeText(card.dataset.searchKeywords || '');
+    const cardText  = normalizeText(card.textContent || '');
+    const matches   = keywords.includes(q) || cardText.includes(q);
+
+    if (matches) {
+      card.removeAttribute('hidden');
+      card.classList.add('ring-2', 'ring-navy', 'ring-offset-2');
+      anyMatch = true;
+    } else {
+      card.setAttribute('hidden', '');
+      card.classList.remove('ring-2', 'ring-navy', 'ring-offset-2');
+    }
+  });
+
+  // Mostrar/ocultar mensaje de "sin resultados"
+  let noResultsMsg = segurosSection.querySelector('#no-results-msg');
+  if (!anyMatch && q) {
+    if (!noResultsMsg) {
+      noResultsMsg = document.createElement('p');
+      noResultsMsg.id = 'no-results-msg';
+      noResultsMsg.className = 'col-span-full text-center text-gray-400 text-[14px] py-8';
+      noResultsMsg.textContent = `No encontramos resultados para "${query}". Intenta con: médico, vida, auto, viajero o cooperativa.`;
+      segurosSection.querySelector('.grid')?.appendChild(noResultsMsg);
+    }
+    noResultsMsg.removeAttribute('hidden');
+  } else if (noResultsMsg) {
+    noResultsMsg.setAttribute('hidden', '');
+  }
+}
+
+/**
+ * Ejecuta la búsqueda: normaliza, filtra y hace scroll suave a #seguros.
+ */
+function executeSearch() {
+  const query = searchInput?.value ?? '';
+  console.log('[ProSeguros] Búsqueda:', query);
+
+  filterSegurosCards(query);
+
+  if (query.trim()) {
+    const segurosSection = document.getElementById('seguros');
+    if (segurosSection) {
+      segurosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    // Cerrar el panel de búsqueda
+    searchPanel?.classList.remove('search-panel--open');
+    if (searchToggle) searchToggle.setAttribute('aria-expanded', 'false');
+  }
+}
+
+// Escuchar Enter en el input de búsqueda
+if (searchInput) {
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      executeSearch();
+    }
+  });
+
+  // Limpiar filtro cuando el usuario borra todo el texto
+  searchInput.addEventListener('input', () => {
+    if (!searchInput.value.trim()) {
+      filterSegurosCards('');
+    }
+  });
+}
+
+// Escuchar clic en el botón de búsqueda (el searchToggle también actúa como submit)
+if (searchToggle) {
+  // El toggle ya abre/cierra el panel — añadimos: si el input tiene texto, buscar
+  searchToggle.addEventListener('dblclick', () => {
+    if (searchInput?.value.trim()) executeSearch();
+  });
+}
+
+// Botón de búsqueda dentro del panel (ícono de lupa junto al input)
+const searchSubmitBtn = document.getElementById('searchSubmitBtn');
+if (searchSubmitBtn) {
+  searchSubmitBtn.addEventListener('click', () => executeSearch());
+}
+// ── /Buscador ──────────────────────────────────────────────────────────────
 // ── 4.5 Hamburger — menú móvil ────────────────────────────────────────────
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 if (hamburgerBtn) {
