@@ -1542,8 +1542,58 @@ if (cotizadorEl) {
       setBtnLoading(btn, true, originalHTML);
 
       try {
-        const docRef = await guardarCotizacion({ tipo: tipoSeguro, subtipo: subTipo, campos });
-        console.log('[ProSeguros] Guardado en Firestore. ID:', docRef.id);
+        // ── Construir HTML del correo con los datos del formulario ──────
+        const camposHTML = Object.entries(campos)
+          .map(([k, v]) => `<tr><td style="padding:6px 12px;color:#666;font-size:13px;">${k}</td><td style="padding:6px 12px;font-size:13px;font-weight:600;color:#4F446C;">${v || '—'}</td></tr>`)
+          .join('');
+
+        const emailHTML = `
+          <div style="font-family:'DM Sans',Arial,sans-serif;max-width:600px;margin:0 auto;background:#fff;border-radius:12px;overflow:hidden;border:1px solid #E2E8F0;">
+            <div style="background:#4F446C;padding:28px 32px;text-align:center;">
+              <p style="margin:0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.55);">ProSeguros GT</p>
+              <h1 style="margin:8px 0 0;font-size:22px;font-weight:700;color:#fff;">Nueva solicitud de cotización</h1>
+            </div>
+            <div style="padding:28px 32px;">
+              <p style="margin:0 0 6px;font-size:13px;color:#94A3B8;text-transform:uppercase;letter-spacing:1px;">Tipo de seguro</p>
+              <p style="margin:0 0 20px;font-size:18px;font-weight:700;color:#4F446C;">${tipoSeguro}${subTipo ? ' — ' + subTipo : ''}</p>
+              <table style="width:100%;border-collapse:collapse;background:#F8FAFC;border-radius:8px;overflow:hidden;">
+                <thead>
+                  <tr style="background:#4F446C;">
+                    <th style="padding:8px 12px;text-align:left;font-size:11px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Campo</th>
+                    <th style="padding:8px 12px;text-align:left;font-size:11px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Dato</th>
+                  </tr>
+                </thead>
+                <tbody>${camposHTML}</tbody>
+              </table>
+            </div>
+            <div style="background:#F8FAFC;padding:20px 32px;border-top:1px solid #E2E8F0;text-align:center;">
+              <p style="margin:0;font-size:12px;color:#94A3B8;">Este correo fue generado automáticamente desde <strong>prosegurosguatemala.com</strong></p>
+            </div>
+          </div>`;
+
+        // ── Escritura simultánea: respaldo + correo ───────────────
+        const [docRef] = await Promise.all([
+          // 1. Respaldo en colección 'cotizaciones'
+          addDoc(collection(db, 'cotizaciones'), {
+            tipo:      tipoSeguro,
+            subtipo:   subTipo,
+            campos,
+            origen:    'web',
+            estado:    'pendiente',
+            timestamp: serverTimestamp()
+          }),
+          // 2. Trigger Email → colección 'mail'
+          addDoc(collection(db, 'mail'), {
+            from:    'notificaciones@prosegurosguatemala.com',
+            to:      'juanpablo@prosegurosguatemala.com',
+            message: {
+              subject: `Nueva cotización: ${tipoSeguro}${subTipo ? ' — ' + subTipo : ''} | ProSeguros GT`,
+              html:    emailHTML
+            }
+          })
+        ]);
+
+        console.log('[ProSeguros] Cotización guardada. ID:', docRef.id);
         setBtnLoading(btn, false, originalHTML);
         showFeedback(panelActivo, true, '¡Solicitud enviada! Te contactaremos en menos de 24 horas.');
         panelActivo.querySelectorAll('input, select, textarea').forEach((f) => { f.value = ''; });
@@ -1586,7 +1636,58 @@ if (contactForm) {
     setBtnLoading(submitBtn, true, originalHTML);
 
     try {
-      const docRef = await guardarCotizacion({ tipo: tipo || 'Consulta general', campos: { nombre, tel, email, mensaje } });
+      // ── Construir HTML del correo ────────────────────────────────
+      const tipoLabel = tipo || 'Consulta general';
+
+      const contactEmailHTML = `
+        <div style="font-family:'DM Sans',Arial,sans-serif;max-width:600px;margin:0 auto;background:#fff;border-radius:12px;overflow:hidden;border:1px solid #E2E8F0;">
+          <div style="background:#4F446C;padding:28px 32px;text-align:center;">
+            <p style="margin:0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.55);">ProSeguros GT</p>
+            <h1 style="margin:8px 0 0;font-size:22px;font-weight:700;color:#fff;">Nuevo mensaje de contacto</h1>
+          </div>
+          <div style="padding:28px 32px;">
+            <table style="width:100%;border-collapse:collapse;background:#F8FAFC;border-radius:8px;overflow:hidden;">
+              <thead>
+                <tr style="background:#4F446C;">
+                  <th style="padding:8px 12px;text-align:left;font-size:11px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Campo</th>
+                  <th style="padding:8px 12px;text-align:left;font-size:11px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Dato</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="padding:6px 12px;color:#666;font-size:13px;">Nombre</td><td style="padding:6px 12px;font-size:13px;font-weight:600;color:#4F446C;">${nombre || '—'}</td></tr>
+                <tr><td style="padding:6px 12px;color:#666;font-size:13px;">Teléfono</td><td style="padding:6px 12px;font-size:13px;font-weight:600;color:#4F446C;">${tel || '—'}</td></tr>
+                <tr><td style="padding:6px 12px;color:#666;font-size:13px;">Correo</td><td style="padding:6px 12px;font-size:13px;font-weight:600;color:#4F446C;">${email || '—'}</td></tr>
+                <tr><td style="padding:6px 12px;color:#666;font-size:13px;">Interés</td><td style="padding:6px 12px;font-size:13px;font-weight:600;color:#4F446C;">${tipoLabel}</td></tr>
+                ${mensaje ? `<tr><td style="padding:6px 12px;color:#666;font-size:13px;vertical-align:top;">Mensaje</td><td style="padding:6px 12px;font-size:13px;color:#4F446C;">${mensaje}</td></tr>` : ''}
+              </tbody>
+            </table>
+          </div>
+          <div style="background:#F8FAFC;padding:20px 32px;border-top:1px solid #E2E8F0;text-align:center;">
+            <p style="margin:0;font-size:12px;color:#94A3B8;">Este correo fue generado automáticamente desde <strong>prosegurosguatemala.com</strong></p>
+          </div>
+        </div>`;
+
+      // ── Escritura simultánea: respaldo + correo ─────────────────
+      const [docRef] = await Promise.all([
+        // 1. Respaldo en colección 'contactos'
+        addDoc(collection(db, 'contactos'), {
+          tipo:      tipoLabel,
+          campos:    { nombre, tel, email, mensaje },
+          origen:    'web',
+          estado:    'pendiente',
+          timestamp: serverTimestamp()
+        }),
+        // 2. Trigger Email → colección 'mail'
+        addDoc(collection(db, 'mail'), {
+          from:    'notificaciones@prosegurosguatemala.com',
+          to:      'juanpablo@prosegurosguatemala.com',
+          message: {
+            subject: `Nuevo contacto: ${nombre} — ${tipoLabel} | ProSeguros GT`,
+            html:    contactEmailHTML
+          }
+        })
+      ]);
+
       console.log('[ProSeguros] Contacto guardado. ID:', docRef.id);
       setBtnLoading(submitBtn, false, originalHTML);
       showFeedback(contactForm, true, '¡Mensaje enviado! Te responderemos en menos de 24 horas.');
