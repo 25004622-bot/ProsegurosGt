@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /proximamente.html
+
+Sitemap: https://www.prosegurosguatemala.com/sitemap.xml
