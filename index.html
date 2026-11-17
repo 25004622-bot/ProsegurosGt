@@ -1241,7 +1241,7 @@ function enviarLead(data){
 function irGraciasCotizacion(d){
  const sum=`Hola ProSeguros, soy ${d.nombre}. Acabo de pedir una cotización${d.tipo?' de '+d.tipo.toLowerCase():''} en la web.${d.detalle?'\n'+d.detalle.split(' | ').map(x=>'• '+x).join('\n'):''}\nMi teléfono: ${d.telefono}`;
  try{sessionStorage.setItem('ps_cot',JSON.stringify({nombre:String(d.nombre).trim().split(' ')[0],tipo:d.tipo,form:d.formulario,desde:'web',wa:sum,lead:0}))}catch(_){}
- location.href=location.protocol==='file:'?'gracias-cotizacion.html':'/GraciasCotizacion'}
+ location.href=location.protocol==='file:'?'gracias-cotizacion.html':'/gracias-cotizacion'}
 function bindForm(f){f.addEventListener('submit',async e=>{e.preventDefault();
  const fd=new FormData(f);if(fd.get('website'))return; // anti-spam
  let ok=true;$$('[required]',f).forEach(i=>{const bad=!i.value.trim()||(i.type==='tel'&&i.value.replace(/\D/g,'').length<8);i.parentElement.classList.toggle('err',bad);if(bad)ok=false});
