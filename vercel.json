@@ -83,48 +83,36 @@
   ],
   "rewrites": [
     {
-      "source": "/VehiculoRegistro",
-      "destination": "/vehiculoregistro.html"
-    },
-    {
-      "source": "/vehiculoregistro",
-      "destination": "/vehiculoregistro.html"
-    },
-    {
       "source": "/Sugerencias",
-      "destination": "/sugerencias.html"
+      "destination": "/sugerencias"
     },
     {
       "source": "/Gracias",
-      "destination": "/gracias.html"
+      "destination": "/gracias"
     },
     {
       "source": "/Derechos-de-autor",
-      "destination": "/derechos-de-autor.html"
+      "destination": "/derechos-de-autor"
     },
     {
       "source": "/Derechos-De-Autor",
-      "destination": "/derechos-de-autor.html"
+      "destination": "/derechos-de-autor"
     },
     {
       "source": "/DerechosDeAutor",
-      "destination": "/derechos-de-autor.html"
+      "destination": "/derechos-de-autor"
     },
     {
       "source": "/derechosdeautor",
-      "destination": "/derechos-de-autor.html"
-    },
-    {
-      "source": "/GraciasCotizacion",
-      "destination": "/gracias-cotizacion.html"
+      "destination": "/derechos-de-autor"
     },
     {
       "source": "/graciascotizacion",
-      "destination": "/gracias-cotizacion.html"
+      "destination": "/gracias-cotizacion"
     },
     {
       "source": "/Gracias-Cotizacion",
-      "destination": "/gracias-cotizacion.html"
+      "destination": "/gracias-cotizacion"
     }
   ]
 }
