@@ -746,6 +746,17 @@ body{background:var(--niebla)}
 .pv-acts b{display:block;color:#fff;font-size:15.5px;margin-bottom:2px}.pv-acts span{color:rgba(255,255,255,.8);font-size:14px;line-height:1.45}
 .pv-acts-light div{background:#fff;border:1px solid var(--linea)}.pv-acts-light b{color:var(--noche)}.pv-acts-light span{color:#3f3d4c}
 .pv-small{border-bottom:0!important}.pv-small p{font-size:15px}
+.pv-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.pv-nav a{color:#fff;font-size:13.5px;font-weight:600;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 14px;background:rgba(255,255,255,.06)}.pv-nav a:hover{background:rgba(255,255,255,.14)}
+.pv section[id]{scroll-margin-top:20px}
+.pv-tag{font-size:12px!important;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--morado)!important;margin-bottom:8px}
+.pv-uso,.pv-autor{background:#fff;border:1px solid var(--linea)!important;border-radius:24px;padding:34px 32px!important;margin-top:24px}
+.pv-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.pv-grid div{background:var(--niebla);border-radius:16px;padding:18px 20px}.pv-grid p{font-size:14.5px;line-height:1.55}
+.pv-ley{font-size:14.5px!important}
+.pv-autor{background:var(--noche);border:0!important}.pv-autor h2,.pv-autor p{color:#fff}.pv-autor p{color:rgba(255,255,255,.82)}.pv-autor .pv-tag{color:var(--lila)!important}
+.pv-firma{margin-top:18px!important;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:13px!important;color:rgba(255,255,255,.6)!important}
+@media (max-width:640px){.pv-grid{grid-template-columns:1fr}.pv-uso,.pv-autor{padding:24px 20px!important}}
 .lg-foot{padding:30px 0;font-size:13px;color:var(--pizarra)}.lg-foot a{color:var(--morado)}
 @media (max-width:640px){.pv-hero{padding:30px 0 60px}.pv-sub{font-size:16px}.pv-promesas{padding:22px 20px!important}.pv h2{font-size:22px}
  .pv-row{grid-template-columns:1fr;gap:2px}.pv-head{display:none}.pv-row span:nth-child(2)::before{content:"Para qué: ";font-weight:600}.pv-row span:nth-child(3)::before{content:"Quién lo ve: ";font-weight:600}.pv-row span:nth-child(4)::before{content:"Tiempo: ";font-weight:600}
@@ -762,12 +773,13 @@ body{background:var(--niebla)}
  <p class="pv-kicker">Privacidad · ProSeguros GT</p>
  <h1>Tus datos se usan para cotizarte. Para nada más.</h1>
  <p class="pv-sub">Somos corredores: para encontrarte el mejor seguro tenemos que conocer un poco de tu vida, tu carro, tu casa o tu empresa. Esta página explica cómo cuidamos esa información en cada paso del camino.</p>
- <p class="pv-date">Vigente desde el 16 de noviembre de 2026</p>
+ <p class="pv-date">Vigente desde el 17 de noviembre de 2026</p>
+ <nav class="pv-nav" aria-label="En esta página"><a href="#privacidad">Privacidad</a><a href="#politica-de-uso">Política de uso</a><a href="derechos-de-autor.html">Derechos de autor</a><a href="sugerencias.html">Sugerencias</a></nav>
 </div></section>
 
 <main class="wrap pv">
 
- <section class="pv-promesas">
+ <section class="pv-promesas" id="privacidad">
   <h2>Cinco cosas que no hacemos</h2>
   <ol>
    <li><span><b>No vendemos</b> ni alquilamos tu información a nadie.</span></li>
@@ -841,10 +853,26 @@ body{background:var(--niebla)}
   <p><b>Datos de otras personas.</b> Si cotizas para tu familia o tu equipo de trabajo, asegúrate de contar con su permiso. Los datos de tus hijos menores de edad los das tú como su madre, padre o encargado; esta página es para personas adultas.</p>
   <p><b>Seguridad.</b> La página viaja cifrada, nuestras cuentas tienen verificación en dos pasos y solo el equipo que atiende tu caso puede ver tu información. Si ocurriera un incidente que te afecte, te avisaremos y te diremos qué hacer.</p>
   <p><b>Cambios.</b> Si actualizamos esta política, cambiaremos la fecha de arriba. Si el cambio afecta datos que ya nos diste, te lo haremos saber.</p>
-  <p><b>Quién responde por tus datos.</b> [RAZÓN SOCIAL], nombre comercial ProSeguros GT, NIT [NIT], corredor de seguros y fianzas con registro [No. DE REGISTRO SIB] ante la Superintendencia de Bancos. 13 calle 05-31, zona 9, Edificio Ascend, Ciudad de Guatemala.</p>
+  <p><b>Quién responde por tus datos.</b> Agencia Independiente de Seguros y Fianzas ProSeguros de Guatemala, nombre comercial ProSeguros GT, NIT 2936836-7, agente de seguros número ASI-2199. 13 calle 05-31, zona 9, Edificio Ascend, Ciudad de Guatemala.</p>
  </section>
 
+ <section class="pv-uso" id="politica-de-uso">
+  <p class="pv-tag">Política de uso</p>
+  <h2>Cómo funciona este sitio y qué esperamos al usarlo</h2>
+  <p>Al navegar por prosegurosguatemala.com o enviarnos un formulario aceptas estas reglas. Son pocas y están pensadas para que la información te sirva y el sitio funcione bien para todos.</p>
+  <div class="pv-grid">
+   <div><h3>Una cotización no es una póliza</h3><p>Los montos, coberturas y beneficios que ves en el sitio, en el simulador o en una cotización son referenciales. Lo que vale es la póliza que emite la aseguradora, con sus condiciones, exclusiones y deducibles. Antes de firmar te explicamos cada punto.</p></div>
+   <div><h3>Tu cobertura empieza cuando la aseguradora la acepta</h3><p>Llenar un formulario o escribirnos por WhatsApp no te deja asegurado. La protección inicia cuando la aseguradora aprueba la solicitud y se cumple lo acordado para el pago de la prima.</p></div>
+   <div><h3>Datos reales y con permiso</h3><p>Te pedimos que la información que nos envíes sea verdadera y que, si incluyes datos de otras personas, cuentes con su autorización. Con datos incorrectos la cotización puede cambiar o la aseguradora puede rechazarla.</p></div>
+   <div><h3>Uso correcto del sitio</h3><p>No está permitido usar el sitio para enviar mensajes falsos o masivos, suplantar a otra persona, intentar entrar a zonas no públicas ni hacer algo que afecte su funcionamiento. Podemos bloquear los envíos que no cumplan estas reglas.</p></div>
+   <div><h3>Enlaces a otros sitios</h3><p>Algunos botones te llevan a WhatsApp o a páginas de aseguradoras. Esos sitios tienen sus propias reglas y no somos responsables de su contenido.</p></div>
+   <div><h3>Disponibilidad y cambios</h3><p>Hacemos lo posible para que el sitio esté siempre en línea, pero puede haber pausas por mantenimiento o causas ajenas a nosotros. Podemos actualizar esta política, y la versión vigente es la publicada aquí.</p></div>
+  </div>
+  <p class="pv-ley">Esta política se rige por las leyes de la República de Guatemala. Si tienes una duda sobre ella escríbenos a <a href="mailto:prosegurosoficialgt@gmail.com">prosegurosoficialgt@gmail.com</a> o llámanos al 2490-1725.</p>
+ </section>
+
+
 </main>
-<footer class="lg-foot"><div class="wrap">© <span id="yr">2026</span> ProSeguros GT · <a href="index.html">Inicio</a> · <a href="privacidad.html">Privacidad</a></div></footer>
+<footer class="lg-foot"><div class="wrap">© <span id="yr">2026</span> ProSeguros GT · <a href="index.html">Inicio</a> · <a href="#privacidad">Privacidad</a> · <a href="#politica-de-uso">Política de uso</a> · <a href="derechos-de-autor.html">Derechos de autor</a> · <a href="sugerencias.html">Sugerencias</a></div></footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
 </body></html>

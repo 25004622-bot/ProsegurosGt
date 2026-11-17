@@ -590,8 +590,9 @@ f.addEventListener('submit',async e=>{e.preventDefault();if(paso!==2)return;
  const btn=$('#send');btn.classList.add('loading');btn.disabled=true;
  try{await enviarLead({formulario:'Landing Vehículo',tipo:'Seguro de vehículo',nombre:datos.nombre,telefono:datos.telefono,correo:fd.get('correo')||'',mensaje:'',detalle,pagina:location.href.split('?')[0],origen:ORI()})}catch(_){}
  await new Promise(r=>setTimeout(r,500));
- pixel('Lead',{content_category:'Seguro de vehículo',content_name:'Landing Vehículo'});
  $('#doneT').textContent='¡Listo, '+datos.nombre.split(' ')[0]+'!';ir(3);registrado=true;try{sessionStorage.setItem('ps_reg','1')}catch(_){};$('.mbar').classList.add('hide');
+ try{sessionStorage.setItem('ps_cot',JSON.stringify({nombre:datos.nombre.split(' ')[0],tipo:'Seguro de vehículo',form:'Landing Vehículo',desde:'landing',pref:v['Contacto preferido'],wa:waText(),lead:0}))}catch(_){}
+ location.href=location.protocol==='file:'?'gracias-cotizacion.html':'/GraciasCotizacion';return;
  btn.classList.remove('loading');btn.disabled=false;
  f.scrollIntoView({behavior:'smooth',block:'center'})});
 
