@@ -72,7 +72,7 @@
       ]
     },
     {
-      "source": "/(gracias|Gracias|gracias.html|gracias-cotizacion|gracias-cotizacion.html|GraciasCotizacion|graciascotizacion|Gracias-Cotizacion)",
+      "source": "/(gracias|Gracias|gracias.html|gracias-cotizacion|gracias-cotizacion.html|GraciasCotizacion|graciascotizacion)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -84,43 +84,47 @@
   "rewrites": [
     {
       "source": "/VehiculoRegistro",
-      "destination": "/vehiculoregistro"
+      "destination": "/vehiculoregistro.html"
+    },
+    {
+      "source": "/vehiculoregistro",
+      "destination": "/vehiculoregistro.html"
     },
     {
       "source": "/Sugerencias",
-      "destination": "/sugerencias"
+      "destination": "/sugerencias.html"
     },
     {
       "source": "/Gracias",
-      "destination": "/gracias"
+      "destination": "/gracias.html"
     },
     {
       "source": "/Derechos-de-autor",
-      "destination": "/derechos-de-autor"
+      "destination": "/derechos-de-autor.html"
     },
     {
       "source": "/Derechos-De-Autor",
-      "destination": "/derechos-de-autor"
+      "destination": "/derechos-de-autor.html"
     },
     {
       "source": "/DerechosDeAutor",
-      "destination": "/derechos-de-autor"
+      "destination": "/derechos-de-autor.html"
     },
     {
       "source": "/derechosdeautor",
-      "destination": "/derechos-de-autor"
+      "destination": "/derechos-de-autor.html"
     },
     {
       "source": "/GraciasCotizacion",
-      "destination": "/gracias-cotizacion"
+      "destination": "/gracias-cotizacion.html"
     },
     {
       "source": "/graciascotizacion",
-      "destination": "/gracias-cotizacion"
+      "destination": "/gracias-cotizacion.html"
     },
     {
       "source": "/Gracias-Cotizacion",
-      "destination": "/gracias-cotizacion"
+      "destination": "/gracias-cotizacion.html"
     }
   ]
 }

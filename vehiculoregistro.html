@@ -592,7 +592,7 @@ f.addEventListener('submit',async e=>{e.preventDefault();if(paso!==2)return;
  await new Promise(r=>setTimeout(r,500));
  $('#doneT').textContent='¡Listo, '+datos.nombre.split(' ')[0]+'!';ir(3);registrado=true;try{sessionStorage.setItem('ps_reg','1')}catch(_){};$('.mbar').classList.add('hide');
  try{sessionStorage.setItem('ps_cot',JSON.stringify({nombre:datos.nombre.split(' ')[0],tipo:'Seguro de vehículo',form:'Landing Vehículo',desde:'landing',pref:v['Contacto preferido'],wa:waText(),lead:0}))}catch(_){}
- location.href=location.protocol==='file:'?'gracias-cotizacion.html':'/gracias-cotizacion';return;
+ location.href=location.protocol==='file:'?'gracias-cotizacion.html':'/GraciasCotizacion';return;
  btn.classList.remove('loading');btn.disabled=false;
  f.scrollIntoView({behavior:'smooth',block:'center'})});
 
